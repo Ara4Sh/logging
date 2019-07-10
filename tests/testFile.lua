@@ -55,7 +55,7 @@ assert(mock.handle["__TEST"..mock.date..".log"].lines[2] == "2008-01-02 ERROR er
 
 mock.date = "2008-01-03"
 
-logger:info({id = "1"})
+logger:info('{id = "1"}')
 
 assert(mock.handle["__TEST"..mock.date..".log"].mode == "a")
 assert(#mock.handle["__TEST"..mock.date..".log"].lines == 1)

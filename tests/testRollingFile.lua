@@ -14,7 +14,7 @@ while size < total_log_size do
 	logger:debug(data)
 	size = size + string.len(data)
 end
-
+--print("Check if files were created")
 -- lets test if all files where created
 for i = 1, max_index do
 	local file = assert(io.open(log_filename.."."..i, "r"))
